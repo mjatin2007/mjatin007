@@ -1,0 +1,35 @@
+Commands (in seperate shells):
+
+>Java JokeClient.java
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+        at JokeClient.main(JokeClient.java:49)
+
+Couldnt resolve the Joke Clientexception error which I was getting. Previously was working and giving jokes. I believe
+if this exception is resolved the code should run fine
+
+
+>Java JokeServer
+Starting JokeServer at port no. 4545.
+java.net.BindException: Address already in use: JVM_Bind
+// The Joke server is running well and good
+
+>Java JokeClientAdmin
+Socket error
+java.net.ConnectException: Connection refused: connect
+        at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+        at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+        at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+        at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+        at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+        at java.net.PlainSocketImpl.connect(Unknown Source)
+        at java.net.SocksSocketImpl.connect(Unknown Source)
+        at java.net.Socket.connect(Unknown Source)
+        at java.net.Socket.connect(Unknown Source)
+        at java.net.Socket.<init>(Unknown Source)
+        at java.net.Socket.<init>(Unknown Source)
+        at JokeClientAdmin.connectionEstablish(JokeClientAdmin.java:57)
+        at JokeClientAdmin.main(JokeClientAdmin.java:36)
+
+Press 'y' to know the state of the server and 'n' to quit
+
+//The JokeClientAdmin is also giving exception errors I couldnt resolve.
