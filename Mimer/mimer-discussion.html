@@ -1,0 +1,46 @@
+<html>
+<h1><center>Mimer Discussion (Step by Step)<center></h1>
+<p>Date: 2/19/2017</p>
+<p>Presented by Jatin Mannepalli</p>
+<h3><u>Discussion</u></h3>
+<p>
+The Mimer project was a challenging yet a very deep and impacting project which I have done to this date. It was a new experience as I have never handler batch
+files before and got to know the varios types of responses from servers on to the client browsers. I used my previous mywebserver and enhanced it for this project
+as this time it has to handle a new type of mime .xyz extension. Chrome and Opera web browsers gave me a lot of issues as they wont allow opening cutomized file types.
+Hence it is advised to go with firefox as it wont cause any trouble.
+</p>
+<p>
+Download the mimer-data.xyz from the website and place it in your webserver files. Make sure that the web-server is edited appropriately when the .xyz fileis accessed
+and you get the results on your shell. Next download the shim.dat file on to your local computer and open the mimer-data.xyz file. The system may ask you to select custom
+program to open such kind of files. Select shim.bat to open the file. Open you MyWebserver and run it and also start firefox parallely. Now access "localhost:2540/mimer-data.xyz"
+and check if its working properly. Upon running shell will open and you can check the mimer-data.xyz in the shell command.
+</p>
+<p>
+Next, in tne mimer project page professor elleiot has provided us handler.java file copy it and compile the program. Edit the shim.bat file by remving the comment
+in the last line in such a way that it looks like this "java -Dfirstarg=%1 Handler". This statement will now freely execute. Now, enter "shim mimer-data.xyz" in the
+command shell. I recieved: <br>
+C:\Users\Jatin\Desktop\MyWebserver>java -Dfirstarg=mimer-data.xyz Handler<br>
+Executing the java application.<br>
+First var is: mimer-data.xyz<br>
+Data is: One partridge in a pear tree<br>
+Data is: Two turtle doves<br>
+Data is: Three French hens<br>
+Data is: Four calling birds<br>
+Data is: Five golden rings<br>
+i is: 6<br>
+A file will be created at this location C:\Temp\mimer.output. Also uncomment the class path in the shim bat file in 3rd to he last line.
+</p>
+<p>
+Next, in your browser access the mimer-data.xyz file through, localhost:2540/mimer-data.xyz. Copy the BCClient.java file and run it on your system. Before, you do that
+please make sure that you have downloaded the xstream java files and placed them in the jdk library. This has really created a headache for me as the xstream was not getting detected by
+the program when I was trying to run it. Now dowload the jcxclient.bat and rcxclient.bat file on your server root folder and edit the path in the last line which points to the xstream 
+files in the jdk libraries which we downloaded earlier. This will be for our BCClient.java. Now run the BCClient.java
+</p>
+<p>
+Now, the next part included a bit of coding. In this back channel capacity was given to the MyWebServer.java file by adding the snippet as provided my professor Elliot.
+Apart from this Xstream was added to handle an deserialize the xml content. This also printed the xml and the object on the cosnole. The next subpart of this step
+was to bring together the BCClient and the Handler programs which was a bit challenging as initalially it gave me lot of bugs and took a while for me to debug
+all of them. Also occasionally, you need to check the mimer.outpu file in the tempirary files and check if the file location is correct as it also makes the 
+program fall apart often.
+</p>
+</html>

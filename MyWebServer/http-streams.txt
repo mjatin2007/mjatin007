@@ -1,0 +1,179 @@
+This file contains Logs from MyListner.
+
+Command:
+C:\Users\Jatin\Desktop\MyWebserver>java MyListener
+
+Jatins' Web Server is now listening to port 2540
+
+GET / HTTP/1.1
+
+Name of file:
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+file/txt/image: .\AddNum.html
+file/txt/image: .\Cat.txt
+file/txt/image: .\dog.txt
+file/txt/image: .\http-streams.txt
+file/txt/image: .\lion.html
+file/txt/image: .\Lol.jpg
+file/txt/image: .\lol.txt
+file/txt/image: .\mT2557wCWiqpep0ZYinEoPQ.jpg
+file/txt/image: .\MyWebServer$Worker.class
+file/txt/image: .\MyWebServer.class
+file/txt/image: .\MyWebServer.java
+dir: .\New_folder
+file/txt/image: .\Worker.class
+<h1> Welcome to Jatin's WebServer </h1><h2> Contents of /</h2><pre><a href=''>Root Directory</a><br><br>[File/TXT/Image] <a href=\AddNum.html>AddNum.html</a>
+[File/TXT/Image] <a href=\Cat.txt>Cat.txt</a>
+[File/TXT/Image] <a href=\dog.txt>dog.txt</a>
+[File/TXT/Image] <a href=\http-streams.txt>http-streams.txt</a>
+[File/TXT/Image] <a href=\lion.html>lion.html</a>
+[File/TXT/Image] <a href=\Lol.jpg>Lol.jpg</a>
+[File/TXT/Image] <a href=\lol.txt>lol.txt</a>
+[File/TXT/Image] <a href=\mT2557wCWiqpep0ZYinEoPQ.jpg>mT2557wCWiqpep0ZYinEoPQ.jpg</a>
+[File/TXT/Image] <a href=\MyWebServer$Worker.class>MyWebServer$Worker.class</a>
+[File/TXT/Image] <a href=\MyWebServer.class>MyWebServer.class</a>
+[File/TXT/Image] <a href=\MyWebServer.java>MyWebServer.java</a>
+[Directory]&nbsp; <a href=\New_folder>New_folder</a>
+[File/TXT/Image] <a href=\Worker.class>Worker.class</a>
+</pre>
+
+//Accessing Dog.txt
+
+GET /dog.txt HTTP/1.1
+dog.txt
+Name of file:dog.txt
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:2540/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+HTTP/1.1 200 OK
+Content-Length: 48
+Content-Type: txt
+Accept-Ranges: bytes
+Datatype:txt
+This is Elliott's dog file on condor. Good job!
+
+//Accessing Lion.html
+
+GET /lion.html HTTP/1.1
+lion.html
+Name of file:lion.html
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:2540/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+HTTP/1.1 200 OK
+Content-Length: 73
+Content-Type: html
+Accept-Ranges: bytes
+Datatype:html
+<html>
+This is Lion.html in Elliott's condor account. Good work!
+</html>
+
+
+GET /AddNum.html HTTP/1.1
+AddNum.html
+Name of file:AddNum.html
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:2540/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+HTTP/1.1 200 OK
+Content-Length: 630
+Content-Type: html
+Accept-Ranges: bytes
+Datatype:html
+
+<!-- saved from url=(0073)http://condor.depaul.edu/elliott/435/hw/programs/mywebserver/addnums.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title> CSC435 Sample Form for AddNum </title></head>
+<body>
+<h1> Addnum </h1>
+
+<form method="GET" action="http://localhost:2540/cgi/addnums.fake-cgi">
+
+Enter your name and two numbers:
+
+<input type="text" name="person" size="20" value="YourName"><p>
+
+<input type="text" name="num1" size="5" value="4"> <br>
+<input type="text" name="num2" size="5" value="5"> <br>
+
+<input type="submit" value="Submit Numbers">
+
+</p></form>
+</body></html>
+
+
+HTTP Status and Code: HTTP/1.1 200 OK
+Content-Length: 630
+Content-Type: html
+Accept-Ranges: bytes
+Datatype:html
+
+<!-- saved from url=(0073)http://condor.depaul.edu/elliott/435/hw/programs/mywebserver/addnums.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title> CSC435 Sample Form for AddNum </title></head>
+<body>
+<h1> Addnum </h1>
+
+<form method="GET" action="http://localhost:2540/cgi/addnums.fake-cgi">
+
+Enter your name and two numbers:
+
+<input type="text" name="person" size="20" value="YourName"><p>
+
+<input type="text" name="num1" size="5" value="4"> <br>
+<input type="text" name="num2" size="5" value="5"> <br>
+
+<input type="submit" value="Submit Numbers">
+
+</p></form>
+</body></html>
+
+GET /cgi/addnums.fake-cgi?person=YourName&num1=4&num2=5 HTTP/1.1
+cgi/addnums.fake-cgi?person=YourName&num1=4&num2=5
+?person=YourName&num1=4&num2=5
+Name of file:cgi/addnums.fake-cgi?person=YourName&num1=4&num2=5?person=YourName&num1=4&num2=5
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://localhost:2540/AddNum.html
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+Exception in thread "Thread-1" java.util.regex.PatternSyntaxException: Dangling meta character '?' near index 0
+?
+^
+        at java.util.regex.Pattern.error(Unknown Source)
+        at java.util.regex.Pattern.sequence(Unknown Source)
+        at java.util.regex.Pattern.expr(Unknown Source)
+        at java.util.regex.Pattern.compile(Unknown Source)
+        at java.util.regex.Pattern.<init>(Unknown Source)
+        at java.util.regex.Pattern.compile(Unknown Source)
+        at java.lang.String.split(Unknown Source)
+        at java.lang.String.split(Unknown Source)
+        at Worker.run(MyWebServer.java:95)

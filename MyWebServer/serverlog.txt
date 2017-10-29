@@ -1,0 +1,55 @@
+GET / HTTP/1.1
+
+Name of file:
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+file/txt/image: .\AddNum.html
+file/txt/image: .\Cat.txt
+file/txt/image: .\dog.txt
+file/txt/image: .\http-streams.txt
+file/txt/image: .\lion.html
+file/txt/image: .\Lol.jpg
+file/txt/image: .\lol.txt
+file/txt/image: .\mT2557wCWiqpep0ZYinEoPQ.jpg
+file/txt/image: .\MyWebServer$Worker.class
+file/txt/image: .\MyWebServer.class
+file/txt/image: .\MyWebServer.java
+dir: .\New_folder
+file/txt/image: .\Worker.class
+<h1> Welcome to Jatin's WebServer </h1><h2> Contents of /</h2><pre><a href=''>Root Directory</a><br><br>[File/TXT/Image] <a href=\AddNum.html>AddNum.html</a>
+[File/TXT/Image] <a href=\Cat.txt>Cat.txt</a>
+[File/TXT/Image] <a href=\dog.txt>dog.txt</a>
+[File/TXT/Image] <a href=\http-streams.txt>http-streams.txt</a>
+[File/TXT/Image] <a href=\lion.html>lion.html</a>
+[File/TXT/Image] <a href=\Lol.jpg>Lol.jpg</a>
+[File/TXT/Image] <a href=\lol.txt>lol.txt</a>
+[File/TXT/Image] <a href=\mT2557wCWiqpep0ZYinEoPQ.jpg>mT2557wCWiqpep0ZYinEoPQ.jpg</a>
+[File/TXT/Image] <a href=\MyWebServer$Worker.class>MyWebServer$Worker.class</a>
+[File/TXT/Image] <a href=\MyWebServer.class>MyWebServer.class</a>
+[File/TXT/Image] <a href=\MyWebServer.java>MyWebServer.java</a>
+[Directory]&nbsp; <a href=\New_folder>New_folder</a>
+[File/TXT/Image] <a href=\Worker.class>Worker.class</a>
+</pre>
+
+GET /New_folder HTTP/1.1
+New_folder
+Name of file:New_folder
+Host: localhost:2540
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+file/txt/image: .\New_folder\Labs Student Schedule WI 17 (1).xlsx
+file/txt/image: .\New_folder\Labs Student Schedule WI 17.xlsx
+<h1> Welcome to Jatin's WebServer </h1><h2> Contents of /New_folder</h2><pre><a href=''>Root Directory</a><br><br>[File/TXT/Image] <a href=\New_folder\Labs Student Schedule WI 17 (1).xlsx>New_folder\Labs Student Schedule WI 17 (1).xlsx</a>
+[File/TXT/Image] <a href=\New_folder\Labs Student Schedule WI 17.xlsx>New_folder\Labs Student Schedule WI 17.xlsx</a>
+</pre>
